@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import TodoList from './components/TodoList';
+import envConfig from './Env';
+import './App.css';
 
 const App = () => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
@@ -36,8 +38,8 @@ const App = () => {
 
 export default () => (
   <Auth0Provider
-    domain="dev-o1kqyr46f3nrfmyp.uk.auth0.com"
-    clientId="891rboo53OoxTdxAXxCcEccqNnVeh0Dj"
+    domain={envConfig.domain}
+    clientId={envConfig.clientId}
     redirectUri={window.location.origin}
   >
     <App />
