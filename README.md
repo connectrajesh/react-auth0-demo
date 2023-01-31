@@ -1,3 +1,9 @@
+# Before you Proceed
+
+Update the Configuration
+
+Please replace the placeholder values in the envConfig object with your actual domain and client ID from your Auth0 account.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
